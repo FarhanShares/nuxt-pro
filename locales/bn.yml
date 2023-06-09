@@ -1,0 +1,83 @@
+components:
+  language_switcher:
+    change_language: ভাষা পরিবর্তন করুন
+  theme_switcher:
+    theme: থিম
+    change_theme: থিম পরিবর্তন করো
+pages:
+  '404':
+    title: পৃষ্ঠা খুঁজে পাওয়া যায়নি
+  index:
+    title: nuxt 3[]অসাধারণ[]স্টার্টার
+  blank:
+    nav: ফাঁকা
+    title: খালি পৃষ্ঠা
+    description: এটি একটি ফাঁকা পৃষ্ঠা
+    just_blank_page_with_title: শিরোনাম সহ খালি পাতা
+  post:
+    nav: পোস্ট
+    title: পোস্ট
+    description: এটি একটি পোস্ট পাতা
+  test:
+    nav: পরীক্ষা
+    title: পরীক্ষামূলক
+    description: এটি একটি পরীক্ষা পৃষ্ঠা
+    counter: পাল্টা
+    increment: বৃদ্ধি
+    decrement: হ্রাস
+    reset: রিসেট
+    identity: পরিচয়
+    full_name: পুরো নাম
+  about:
+    nav: সম্পর্কিত
+    title: শুরু হচ্ছে
+    description: এটি একটি শুরু করার পৃষ্ঠা
+  setting:
+    nav: বিন্যাস
+    title: বিন্যাস
+    description: এটি একটি সেটিং পৃষ্ঠা
+    sections:
+      validate_username:
+        title: github প্রোফাইল যাচাই করুন
+        description: >-
+          আপনার গিথুব ব্যবহারকারীর নাম টাইপ করুন এবং যাচাই করতে বোতামটি ক্লিক
+          করুন।
+        footer: এই সম্পর্কে আরও জানো
+        footer_button: যাচাই করা
+        footer_link: github ব্যবহারকারীদের এপিআই
+      bot_id:
+        title: বট আইডি
+        description: এটি আপনার বট আইডি।
+        footer: বটের সাথে ইন্টারঅ্যাক্ট করার সময় ব্যবহার করা হয়।
+      protection_spam:
+        title: স্প্যাম সুরক্ষা
+        description: লাল সীমানা সরাতে সক্ষম টগল করুন
+        footer: সক্ষম হলে আমরা স্প্যাম থেকে আপনার মন্তব্য সুরক্ষিত করব
+      advanced_enable_advanced:
+        title: উন্নত সেটিংস সক্ষম করুন
+        description: আপনি সেটিংস পরিবর্তন করতে উন্নত সেটিংস সক্ষম করতে পারেন৷
+      advanced_dir_listing:
+        title: ডিরেক্টরি তালিকা
+        description: >-
+          যদি কোনো ডিরেক্টরির মধ্যে কোনো ইনডেক্স ফাইল না থাকে, তাহলে ডিরেক্টরির
+          বিষয়বস্তু প্রদর্শিত হবে।
+  dashboard:
+    nav: ড্যাশবোর্ড
+    title: ড্যাশবোর্ড
+    index:
+      nav: বাড়ি
+      title: বাড়ি
+banners:
+  welcome: হ্যালো, %{app_name}-এ স্বাগতম!
+others:
+  learn_more: আরও জানুন
+  copy: অনুলিপি
+  enabled: সক্রিয়
+  disabled: অক্ষম
+auth:
+  nav:
+    login: প্রবেশ করুন
+    sign_up: নিবন্ধন করুন
+topic:
+  nav:
+    browse: ব্রাউজ করুন

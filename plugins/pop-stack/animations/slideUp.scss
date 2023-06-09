@@ -1,0 +1,20 @@
+/* -- slideUp -- */
+@keyframes app-modal-slideUp-enter {
+  from {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+
+.app-modal-slideUp-enter-active {
+  animation: app-modal-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@keyframes app-modal-slideUp-leave {
+  to {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+
+.app-modal-slideUp-leave-active {
+  animation: app-modal-slideUp-leave both;
+}

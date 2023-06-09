@@ -1,0 +1,24 @@
+// vars
+@use 'variables';
+
+// components
+@use 'fonts';
+@use 'scrollbar';
+
+// animations
+@use 'transitions';
+
+// others
+@use 'waves';
+
+.app {
+  @apply antialiased transition duration-300 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900;
+}
+
+.app-container {
+  @apply max-w-8xl w-full h-full bg-gray-100 px-2 py-4 mx-auto;
+}
+
+.app-section {
+  @apply mt-3 p-3 bg-white shadow-sm rounded-md;
+}

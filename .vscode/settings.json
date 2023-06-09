@@ -1,0 +1,36 @@
+{
+  "editor.tabSize": 2,
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "[css]": { "editor.defaultFormatter": "rvest.vs-code-prettier-eslint" },
+  "css.lint.validProperties": [
+    "@tailwind",
+    "@variants",
+    "@screen",
+    "@screen md",
+    "@apply",
+    "@screen lg",
+    "@screen xl",
+    "@screen 2xl",
+    "@responsive",
+    "theme"
+  ],
+  "scss.lint.validProperties": [
+    "@tailwind",
+    "@variants",
+    "@screen",
+    "@screen md",
+    "@screen lg",
+    "@screen xl",
+    "@screen 2xl",
+    "@responsive",
+    "@apply",
+    "theme"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
+  "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.cjs",
+  "i18n-ally.localesPaths": [
+    "locales"
+  ]
+}

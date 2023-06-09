@@ -1,0 +1,20 @@
+/* -- slideDown -- */
+@keyframes app-modal-slideDown-enter {
+  from {
+    transform: translate3d(0, -100px, 0);
+  }
+}
+
+.app-modal-slideDown-enter-active {
+  animation: app-modal-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@keyframes app-modal-slideDown-leave {
+  to {
+    transform: translate3d(0, -100px, 0);
+  }
+}
+
+.app-modal-slideDown-leave-active {
+  animation: app-modal-slideDown-leave both;
+}

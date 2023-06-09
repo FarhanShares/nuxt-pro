@@ -1,0 +1,23 @@
+.bg-image {
+  background-image: url('.././assets/graphics/home/gradient-blue-teal.svg');
+  // background-image: url('./assets/img/bg2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.waves-to-br {
+  background-image: url('.././assets/graphics/svg/waves/to-bottom-right.svg');
+  // background-size: contain;
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-color: #fff;
+}
+
+.waves-to-c {
+  background-image: url('.././assets/graphics/svg/waves/to-center.svg');
+  // background-size: contain;
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-color: #fff;
+  padding: 20px;
+}

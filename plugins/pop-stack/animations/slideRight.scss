@@ -1,0 +1,20 @@
+/* -- slideRight -- */
+@keyframes app-modal-slideRight-enter {
+  from {
+    transform: translate3d(150px, 0, 0);
+  }
+}
+
+.app-modal-slideRight-enter-active {
+  animation: app-modal-slideRight-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@keyframes app-modal-slideRight-leave {
+  to {
+    transform: translate3d(150px, 0, 0);
+  }
+}
+
+.app-modal-slideRight-leave-active {
+  animation: app-modal-slideRight-leave both;
+}

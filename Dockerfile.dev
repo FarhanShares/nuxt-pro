@@ -1,0 +1,12 @@
+FROM node:16.17.0-alpine as build
+RUN apk update && \
+    apk upgrade && \
+    apk add git --no-cache --quiet --no-progress
+
+WORKDIR /var/app/dev
+COPY . .
+RUN yarn install
+
+EXPOSE 3000
+ENV HOST=0.0.0.0
+CMD ["yarn", "dev"]

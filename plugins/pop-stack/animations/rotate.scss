@@ -1,0 +1,28 @@
+/* -- rotate -- */
+@keyframes app-modal-rotate-enter {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+    transform: rotate3d(0, 0, 1, -180deg) scale3d(.3, .3, .3);
+  }
+}
+
+.app-modal-rotate-enter-active {
+  -webkit-animation: app-modal-rotate-enter both;
+  animation: app-modal-rotate-enter both;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+@keyframes app-modal-rotate-leave {
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+    transform: rotate3d(0, 0, 1, 180deg) scale3d(.3, .3, .3);
+  }
+}
+
+.app-modal-rotate-leave-active {
+  -webkit-animation: app-modal-rotate-leave both;
+  animation: app-modal-rotate-leave both;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}

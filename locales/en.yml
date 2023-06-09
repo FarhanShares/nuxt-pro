@@ -1,0 +1,160 @@
+app:
+  name: বিয়ের প্রোফাইল
+  nameEn: BiyerProfile
+  nameEnFull: BiyerProfile.Com
+  slogan: দ্বীনদার সঙ্গীর সন্ধানে
+  sloganEn: In search of an Islam aware mate.
+  description: বিয়ের প্রোফাইল.কম - দ্বীনদার সঙ্গীর সন্ধানে
+home:
+  home: হোম
+  mainHeroTitle: স্বপ্ন বুনুন দ্বীনদার সঙ্গীকে নিয়ে
+  mainHeroDescription: >-
+    বর্তমান সমাজে বিয়ে কঠিন হয়ে গিয়েছে। বিয়ের জন্য দ্বীনদার সঙ্গী খুঁজে পাওয়া
+    কঠিন হয়ে পরেছে। মহান আল্লাহ পাক এই সমস্যার সমাধান করেন, আমীন। ফেতনার এই
+    জামানায় চরিত্রের হেফাজতে বিয়ে নিয়ে সমাজ সৃষ্ট জটিলতা যাতে কিছুটা হলেও লাঘব
+    হয়, এই প্রয়াসে দ্বীনিবন্ধন.কম কে আল্লাহ তা'আলা প্র্যাকটিসিং মুসলিম উম্মাহ'র
+    খেদমতে কাজ করার করার তৌফিক দান করেন, আমীন।
+  mainHeroDescriptionOne: >-
+    বর্তমান সমাজে বিয়ে কঠিন হয়ে গিয়েছে। বিয়ের জন্য দ্বীনদার সঙ্গী খুঁজে পাওয়া
+    কঠিন হয়ে পরেছে। মহান আল্লাহ পাক এই সমস্যার সমাধান করেন, আমীন।
+  mainHeroDescriptionTwo: >-
+    ফেতনার এই জামানায় চরিত্রের হেফাজতে বিয়ে নিয়ে সমাজ সৃষ্ট জটিলতা যাতে কিছুটা
+    হলেও লাঘব হয়, এই প্রয়াসে দ্বীনিবন্ধন.কম কে আল্লাহ তা'আলা প্র্যাকটিসিং মুসলিম
+    উম্মাহ'র খেদমতে কাজ করার করার তৌফিক দান করেন, আমীন।
+  profilesForYou: আপনার জন্য
+  exploreProfiles: এক্সপ্লোর করুন
+  or: অথবা
+  getPersonalizedSpace: করলে পার্সোনালাইজড স্পেস পাবেন
+components:
+  language_switcher:
+    change_language: change language
+  theme_switcher:
+    theme: theme
+    change_theme: change theme
+pages:
+  index:
+    title: nuxt 3[]awesome[]starter
+  404:
+    title: page not found
+  blank:
+    nav: blank
+    title: blank page
+    description: this is a blank page
+    just_blank_page_with_title: just blank page with title
+  post:
+    nav: post
+    title: post
+    description: this is a post page
+  test:
+    nav: test
+    title: testing
+    description: this is a test page
+    counter: counter
+    increment: increment
+    decrement: decrement
+    reset: reset
+    identity: identity
+    full_name: fullName
+  about:
+    nav: About
+    title: getting started
+    description: this is a getting started page
+  setting:
+    nav: setting
+    title: setting
+    description: this is a setting page
+    sections:
+      validate_username:
+        title: validate github profile
+        description: type your github username and click the button to validate.
+        footer: Learn more about
+        footer_button: validate
+        footer_link: github users api
+      bot_id:
+        title: bot id
+        description: This is your bot ID.
+        footer: Used when interacting with the bot.
+      protection_spam:
+        title: spam protection
+        description: toggle enable to remove the red border
+        footer: if enable we will secure your comments from spam
+      advanced_enable_advanced:
+        title: enable advanced settings
+        description: you can enable advanced settings to change the settings
+      advanced_dir_listing:
+        title: directory listing
+        description: if no index file is present within a directory, the directory contents will be displayed.
+  dashboard:
+    nav: dashboard
+    title: dashboard
+    index:
+      nav: home
+      title: home
+banners:
+  welcome: hello, welcome to %{app_name}!
+others:
+  learn_more: learn more
+  copy: copy
+  enabled: enabled
+  disabled: disabled
+
+auth:
+  nav:
+    login: Login
+    sign_up: Sign up
+  signin:
+    signin: সাইন ইন
+    signinMenu: সাইন ইন
+    signinMenuSubtext: পার্সোনালাইজড স্পেসের জন্য লগিন করুন
+    notLoggedIn: আপনি এখনো লগিন করেননি
+    personalizedSpace: পার্সোনালাইজড স্পেসের জন্য লগিন করুন
+    signinSuccess: আপনি ইন আউট করেছেন
+    signinError: দুঃখিত, আপনি লগইন করতে ব্যর্থ হয়েছেন!
+  signup:
+    signup: সাইন আপ
+    signupMenu: সাইন আপ
+    signupMenuSubtext: একাউন্ট না থাকলে সহজেই ক্রিয়েট করুন
+    signupNow: জয়েন করে এক্সপ্লোর করুন
+    getStarted: এবার শুরু করা যাক
+    registration: রেজিস্ট্রেশন করুন
+    createIfNoAccount: একাউন্ট না থাকলে সহজেই ক্রিয়েট করুন
+  signout:
+    signout: সাইন আউট
+    signoutMenu: সাইন আউট
+    signoutMenuSubtext: সাইন আউট করুন
+    signoutSuccess: আপনি সাইন আউট করেছেন
+  verifyEmail:
+    invalidLink: দুঃখিত! ভেরিফিকেশন লিংকটি অকার্যকর অথবা মেয়াদোত্তীর্ণ!
+    expiredLink: দুঃখিত! ভেরিফিকেশন লিংকটি মেয়াদোত্তীর্ণ!
+    emptyForm: দুঃখিত! আপনাকে অবশ্যই ইমেইল এবং ভেরিফিকেশন কোড লিখতে হবে!
+    success: অভিনন্দন! আপনার ইমেইলটি ভেরিফাইড হিসেবে চিহ্নিত করা হয়েছে।
+    invalidCode: দুঃখিত! আপনার কোডটি সঠিক নয়!
+    alreadyVerified: আপনার ইমেইলটি ইতঃপূর্বে ভেরিফাইড হিসেবে চিহ্নিত করা হয়েছ।
+    verifying: অনুগ্রহ করে অপেক্ষা করুন, ভেরিফিকেশন প্রক্রিয়া সম্পন্ন করা হচ্ছে।
+    loginToContinue: আপনার একাউন্টটির ব্যাবহার অবিরত রাখতে সাইন ইন করুন
+    resendSuccess: একটি নতুন ভেরিফিকেশন কোড আপনার ইমেইল আইডিতে পাঠানো হয়েছে।
+    resendFailure: ভেরিফিকেশন কোডটি পুনরায় পাঠানো সম্ভব হয়নি, কিছুক্ষণ পরে আবার চেষ্টা করুন।
+  generic:
+    dontHaveAnAccount: কোন অ্যাকাউন্ট নেই?
+    createNow: এখন তৈরি করুন।
+    alreadyHaveAnAccount: ইতিমধ্যে একটি অ্যাকাউন্ট আছে?
+    signin: সাইন ইন করুন।
+    signupInstruction: প্রতিটি ফিল্ডে সঠিক ও প্রকৃত তথ্য দিন এবং ইংরেজি ব্যাবহার করুন
+
+topic:
+  nav:
+    browse: Browse
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+intro:
+  desc: Experience AI Assisted Learning
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+not-found: Not found

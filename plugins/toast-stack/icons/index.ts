@@ -1,0 +1,5 @@
+export { default as IconClose } from './Close.vue'
+export { default as IconError } from './Error.vue'
+export { default as IconThumbs } from './Thumbs.vue'
+export { default as IconSuccess } from './Success.vue'
+export { default as IconWarning } from './Warning.vue'

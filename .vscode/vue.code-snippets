@@ -1,0 +1,79 @@
+{
+  "Generate Nuxt 3 Page": {
+    "prefix": "n3:page",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "// compiler macro",
+      "definePageMeta({",
+      "  layout: 'page',",
+      "})",
+      "useHead(() => ({",
+      "  title: ${1:${PAGE_TITLE}},",
+      "}))",
+      "</script>",
+      "",
+      "<template>",
+      "  <PageWrapper>",
+      "    <PageHeader>",
+      "      <PageTitle text=\"${1:${PAGE_TITLE}}\" class=\"capitalize\" />",
+      "    </PageHeader>",
+      "    <PageBody>",
+      "      <PageSection>",
+      "        <div>${2:${PAGE_BODY}}</div>",
+      "      </PageSection>",
+      "    </PageBody>",
+      "  </PageWrapper>",
+      "</template>",
+      ""
+    ],
+    "description": "Generate Nuxt 3 Page"
+  },
+  "SFC": {
+    "prefix": "n3:sfc",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "// compose your sfc",
+      "${1}",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>${2:${Hello}}</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ],
+    "description": "Generate SFC"
+  },
+  "Component": {
+    "prefix": "n3:comp",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "export interface IProps {",
+      "  ${1:modelValue?}: ${2:string}",
+      "}",
+      "const props = withDefaults(defineProps<IProps>(), {",
+      "  ${3:modelValue}: ${4:''},",
+      "})",
+      "const emit = defineEmits<{",
+      "  (event: 'update:modelValue', data: string): void",
+      "}>()",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>${5:${Hello}}</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ],
+    "description": "Generate Component Using Composition API"
+  },
+  "SvgIcon": {
+    "prefix": "isvg",
+    "body": [
+      "<IconSvg name=\"\" />",
+    ],
+    "description": "Generate Component Using Composition API"
+  }
+}

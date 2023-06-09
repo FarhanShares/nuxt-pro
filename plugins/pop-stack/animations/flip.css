@@ -1,0 +1,59 @@
+/* -- flip -- */
+@-webkit-keyframes app-modal-flip-enter {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+  }
+  70% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+@keyframes app-modal-flip-enter {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+  }
+  70% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+.app-modal-flip-enter-active {
+  -webkit-animation: app-modal-flip-enter both ease-in;
+          animation: app-modal-flip-enter both ease-in;
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+}
+
+@-webkit-keyframes app-modal-flip-leave {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+  }
+}
+
+@keyframes app-modal-flip-leave {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 45deg);
+  }
+}
+.app-modal-flip-leave-active {
+  -webkit-animation: app-modal-flip-leave both;
+          animation: app-modal-flip-leave both;
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+}/*# sourceMappingURL=flip.css.map */

@@ -1,0 +1,54 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    env_file: .env.docker
+    # container_name: ria-frontend-app
+    restart: always
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    command: 'node server/index.mjs'
+    networks:
+     - ria-frontend-network
+  stap:
+    image: nginx:1.23-alpine
+    restart: always
+    tty: true
+    stdin_open: true
+    ports:
+      - 9995:80
+    expose:
+      - 9995
+    volumes:
+      - ./docker-compose/stap/:/usr/share/nginx/html
+    networks:
+     - ria-frontend-network
+  # nginx:
+  #   image: nginx:1.23-alpine
+  #   # container_name: ria-frontend-nginx
+  #   restart: always
+  #   tty: true
+  #   stdin_open: true
+  #   ports:
+  #     - 80:80
+  #     - 443:443
+  #   expose:
+  #     - 80
+  #     - 443
+  #   depends_on:
+  #    - app
+  #   volumes:
+  #     # - ./:/var/app/main
+  #     - ./docker-compose/nginx/default-site/:/var/app/default-site
+  #     - ./docker-compose/nginx/conf.d/:/etc/nginx/conf.d/
+  #   networks:
+  #    - ria-frontend-network
+
+networks:
+  ria-frontend-network:
+    driver: bridge

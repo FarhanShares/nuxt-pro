@@ -1,0 +1,178 @@
+label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+@screen lg {
+  label {
+    font-size: 16px;
+  }
+}
+
+.rt-input {
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 0 1px theme("colors.muted.200");
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  background: theme("colors.white");
+  color: theme("colors.black");
+  -moz-appearance: textfield;
+}
+.rt-input::-moz-placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  color: theme("colors.muted.300");
+}
+.rt-input:-ms-input-placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  color: theme("colors.muted.300");
+}
+.rt-input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  color: theme("colors.muted.300");
+}
+.rt-input::-webkit-outer-spin-button, .rt-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.rt-input:hover, .rt-input:focus, .rt-input:focus-within, .rt-input:focus-visible {
+  box-shadow: 0 0 0 1px theme("colors.primary.DEFAULT");
+}
+@screen lg {
+  .rt-input {
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.rt-input--textarea {
+  resize: none;
+}
+
+.rt-input-wrap {
+  position: relative;
+}
+
+.rt-input-wrap--error > .rt-input-wrap__rt-input {
+  box-shadow: 0 0 0 1px theme("colors.danger.DEFAULT");
+}
+.rt-input-wrap--error > .rt-input-wrap__error {
+  display: inline-block;
+}
+
+.rt-input-wrap__error {
+  position: absolute;
+  right: 0;
+  bottom: -19px;
+  z-index: 10;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 130%;
+  display: none;
+  color: theme("colors.danger.DEFAULT");
+}
+
+.rt-input-pass {
+  position: relative;
+}
+
+.rt-input-pass__toogle-pas-btn {
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@screen lg {
+  .rt-input-pass__toogle-pas-btn {
+    right: 21px;
+  }
+}
+
+.w-custom-checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.w-custom-checkbox__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.w-custom-checkbox__label::before {
+  margin-right: 10px;
+  content: "";
+  display: block;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px theme("colors.secondary-text.200");
+  background-color: theme("colors.white");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='9' viewBox='0 0 12 9' fill='none'%3E%3Cpath id='check' fill-rule='evenodd' clip-rule='evenodd' d='M10.9498 0.87947C10.5593 0.488946 9.92609 0.488946 9.53557 0.87947L4.58594 5.8291L2.46443 3.70759C2.07391 3.31707 1.44074 3.31707 1.05022 3.70759C0.659693 4.09812 0.659693 4.73128 1.05022 5.12181L3.86589 7.93748C3.87012 7.94186 3.87439 7.94622 3.87871 7.95054C4.26924 8.34106 4.9024 8.34106 5.29293 7.95054L10.9498 2.29368C11.3403 1.90316 11.3403 1.26999 10.9498 0.87947Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 12px 9px;
+  background-position: center;
+}
+@screen lg {
+  .w-custom-checkbox__label::before {
+    flex: 0 0 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background-size: 18px 13px;
+    background-position: center;
+  }
+}
+
+.w-custom-checkbox__label--white::before {
+  background-color: theme("colors.white");
+}
+
+.w-custom-checkbox__label--empty::before {
+  margin-right: 0;
+}
+
+.w-custom-checkbox__label--top::before {
+  align-self: flex-start;
+}
+
+.w-custom-checkbox__input:checked ~ .w-custom-checkbox__label::before {
+  background-color: theme("colors.primary.DEFAULT");
+  box-shadow: none;
+}
+
+.w-custom-checkbox__input:focus-visible ~ .w-custom-checkbox__label::before {
+  box-shadow: inset 0 0 0 2px theme("colors.primary.DEFAULT");
+}
+
+.w-custom-checkbox__input:checked:focus-visible ~ .w-custom-checkbox__label::before {
+  box-shadow: inset 0 0 0 2px theme("colors.secondary-text.200");
+}
+
+.w-custom-checkbox__label:hover::before {
+  box-shadow: inset 0 0 0 1px theme("colors.primary.DEFAULT");
+}/*# sourceMappingURL=index.css.map */

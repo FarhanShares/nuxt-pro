@@ -1,0 +1,31 @@
+/* -- slideUp -- */
+@-webkit-keyframes app-modal-slideUp-enter {
+  from {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+@keyframes app-modal-slideUp-enter {
+  from {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+.app-modal-slideUp-enter-active {
+  -webkit-animation: app-modal-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
+          animation: app-modal-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes app-modal-slideUp-leave {
+  to {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+
+@keyframes app-modal-slideUp-leave {
+  to {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+.app-modal-slideUp-leave-active {
+  -webkit-animation: app-modal-slideUp-leave both;
+          animation: app-modal-slideUp-leave both;
+}/*# sourceMappingURL=slideUp.css.map */

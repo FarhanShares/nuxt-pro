@@ -1,0 +1,30 @@
+*.log
+nuxt.d.ts
+
+# private config
+.env
+
+# deps
+node_modules
+
+# build or generate
+.nuxt
+dist
+.output
+
+# IDE
+.idea
+
+public/static/*
+.DS_Store
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+assets/icons/cache
+
+assets/svg-transformer-list.ts

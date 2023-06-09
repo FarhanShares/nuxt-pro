@@ -1,0 +1,31 @@
+/* -- fade -- */
+@-webkit-keyframes app-modal-fade-enter {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes app-modal-fade-enter {
+  from {
+    opacity: 0;
+  }
+}
+.app-modal-fade-enter-active {
+  -webkit-animation: app-modal-fade-enter both ease-in;
+          animation: app-modal-fade-enter both ease-in;
+}
+
+@-webkit-keyframes app-modal-fade-leave {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes app-modal-fade-leave {
+  to {
+    opacity: 0;
+  }
+}
+.app-modal-fade-leave-active {
+  -webkit-animation: app-modal-fade-leave both ease-out;
+          animation: app-modal-fade-leave both ease-out;
+}/*# sourceMappingURL=fade.css.map */

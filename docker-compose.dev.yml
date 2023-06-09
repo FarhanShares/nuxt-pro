@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args: # todo: load & use these from env
+        DEV_NITRO_PORT: 5000
+        DEV_NITRO_HOST: 0.0.0.0
+        DEV_FORWARD_PORT: 4040
+    env_file: .env.docker
+    container_name: ria-dev-frontend-app
+    restart: unless-stopped
+    working_dir: /var/app/dev
+    volumes:
+      - ./:/var/app/dev
+    ports:
+      - 4040:3000 # dev server
+      - 4000:4000 # nuxt-content ws
+      - 4001:4001 # windicss analyzer
+      - 24678:24678 # vite hmr ws
+    expose:
+      - 4000
+      - 4040
+      - 4001
+      - 24768
+    tty: true
+    command: 'yarn dev'

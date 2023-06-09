@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #1D64F0; // $primary-color
+  --primary-color-500: var(--primary-color);
+
+  --accent-color: #098FFA
+
+  --warning: #e5593a; // $color-orange
+  --warning-100: #fadcb2; // $color-orange
+  --warning-500: var(--warning);
+
+  --danger: #e53a4f; // $warning-color
+  --danger-500: var(--danger);
+
+  --color-yellow: #fadcb2;
+
+  --subtle: #d5dde7;
+  --subtle-500: var(--subtle-touch);
+
+  --primary-text: #1e322e; // $text-color
+  --primary-text-500: var(--primary-text);
+
+  --secondary-text: #66737f; // $text-color-grey:
+  --secondary-text-200: #d5dde7;
+  --secondary-text-300: #abbbce; // $text-color-grey-light
+  --secondary-text-500: var(--secondary-text);
+
+  // forms
+  --form-border: #d5dde7; // $input-border-color
+
+  // non-conventional [usually should be avoided for the theming & maintaining context]
+  --dark: #1e322e; // dark hound
+  --dark-500: var(--dark);
+
+  --light: #d5dde7; // off white
+  --light-500: var(--light);
+
+  // gradients
+  --gradient-rgb: linear-gradient(233.94deg, #e53a4f 28.24%, #10a9a0 73.84%);
+  --gradient-red: linear-gradient(270deg, #c10d23 0%, #e53a4f 100%);
+  --gradient-green: linear-gradient(67.47deg, #10a9a0 13.54%, #006b65 92.17%);
+
+}
+
+.dark {
+  // TODO: define colors
+  --primary-color: var(--primary-color-500);
+}
+
+.app {
+  --el-color-primary: var(--primary-color);
+  --el-button-hover-bg-color: #000000;
+  --el-tag-bg-color: red;
+}
+
+.dark.app {
+  // TODO: define colors?
+}
